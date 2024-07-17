@@ -4,7 +4,7 @@ baseurl: ""
 url: ""
 
 # site settings
-theme: cvless
+# theme: cvless
 remote_theme: cvless
 taglong: Software Performance Engineer. Algorithms and Systems on Big Data.
 tagshort: Research on Big Data Algorithms and Systems
