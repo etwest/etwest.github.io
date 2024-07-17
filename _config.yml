@@ -1,0 +1,26 @@
+title: Evan West
+description: Evan West is an applied algorithms researcher. His research includes graph streaming, parallel algorithms, and caching. He is currently pursuing a Ph.D. at Stony Brook University.
+baseurl: ""
+url: ""
+
+# site settings
+theme: cvless
+taglong: Software Performance Engineer. Algorithms and Systems on Big Data.
+tagshort: Research on Big Data Algorithms and Systems
+
+# author settings
+author:
+  name: Evan West
+  email: evan.ts.west@gmail.com
+photo: assets/files/photo.jpg
+
+# social media links
+social:
+  github: etwest
+  linkedin: evantwest
+
+# build settings
+permalink: pretty
+exclude:
+  - LICENSE
+  - README.md
