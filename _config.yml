@@ -5,14 +5,14 @@ url: ""
 
 # site settings
 theme: cvless
-taglong: Software Performance Engineer. Algorithms and Systems on Big Data.
-tagshort: Research on Big Data Algorithms and Systems
+taglong: Computer Science Researcher. Algorithms and Systems for Big Data.
+tagshort: Research on Big Data Algorithms and Systems.
 
 # author settings
 author:
   name: Evan West
   email: evan.ts.west@gmail.com
-photo: assets/files/photo.jpg
+photo: assets/files/photo.png
 
 # social media links
 social:
