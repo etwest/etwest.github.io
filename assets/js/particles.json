@@ -56,9 +56,9 @@
       "enable": true,
       "speed": 1,
       "direction": "none",
-      "random": false,
+      "random": true,
       "straight": false,
-      "out_mode": "out",
+      "out_mode": "bounce",
       "bounce": false,
       "attract": {
         "enable": false,
@@ -76,13 +76,13 @@
       },
       "onclick": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "push"
       },
       "resize": true
     },
     "modes": {
       "grab": {
-        "distance": 200,
+        "distance": 150,
         "line_linked": {
           "opacity": 0.6
         }
@@ -95,16 +95,16 @@
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
+        "distance": 175,
         "duration": 0.5
       },
       "push": {
-        "particles_nb": 4
+        "particles_nb": 1
       },
       "remove": {
         "particles_nb": 2
       }
     }
   },
-  "retina_detect": false
+  "retina_detect": true
 }
