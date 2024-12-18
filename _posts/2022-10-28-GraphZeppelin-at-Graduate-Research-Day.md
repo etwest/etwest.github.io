@@ -10,7 +10,9 @@ Graduate Research Day is an event put on by the Stony Brook Computer Science Dep
 I was selected to give a talk and my talk was selected as the best theory presentation.
 
 ## Topic of Talk
+Computing properties of graphs becomes very difficult when the graph is large and dense. That is, when storing the graph losslessly exceeds the resources of the machine (RAM or Disk). This problem becomes even more challenging when the graph is constructed by a dynamic stream. Dynamic graph streams iteratively insert or delete edges and the property must be computed after the stream concludes.
 
+We present a new high-performance streaming graph-processing system for computing the connected components of a graph. This system, which we call *GraphZeppelin*, uses new linear sketching data structures (CubeSketch) to solve the streaming connected components problem and as a result requires space asymptotically smaller than the space required for a lossless representation of the graph. GraphZeppelin is optimized for massive dense graphs: GraphZeppelin can process millions of edge updates (both insertions and deletions) per second, even when the underlying graph is far too large to fit in available RAM. As a result GraphZeppelin vastly increases the scale of graphs that can be processed.
 
 ### Paper Citation
 Tench, David, **Evan West**, Victor Zhang, Michael A. Bender, Abiyaz Chowdhury, J. Ahmed Dellas, Martin Farach-Colton, Tyler Seip, and Kenny Zhang. "GraphZeppelin: Storage-friendly sketching for connected components on dynamic graph streams." In *Proceedings of the 2022 International Conference on Management of Data*, pp. 325-339. 2022.
