@@ -5,10 +5,43 @@ title: Publication List
 
 # My Publications
 
+## Don't Melt Your Cache: Low-Associativity with Heat-Sink
+[Download Paper](/assets/papers/2025_low_assoc_heat_sink.pdf)
+
+Michael A. Bender, Alex Conway, Daniel DeLayo, Martin Farach-Colton, Jaehyun Han, Linfeng He, Rob Johnson, Sudarsun Kannan, William Kuszmaul, Donald Porter, **Evan West**. 2025. Don’t Melt Your Cache: Low-Associativity with Heat-Sink. In *37th ACM Symposium on Parallelism in Algorithms and Architectures (SPAA ’25)*, July 28–August 1, 2025, Portland, OR, USA. ACM, New York, NY, USA, 11 pages. [https://doi.org/10.1145/3694906.3743303](https://doi.org/10.1145/3694906.3743303)
+
+<details>
+<summary>Abstract</summary>
+Perhaps the most influential result in the theory of caches is the following theorem due to Sleator and Tarjan: With 𝑂(1)resource augmentation, the basic LRU eviction policy is guaranteed to be 𝑂(1)-competitive with the optimal offline policy. 
+<br><br>
+Sleator and Tarjan’s result applies to LRU on a fully associative cache, but does not tell us how to think about caches with low associativity, i.e., caches where each page has only 𝑑positions in which it is capable of residing. This means that many modern caches cannot directly apply the result.
+<br><br>
+It is widely believed that to implement a cache with low associativity, one should still use LRU, but restricted to the 𝑑positions that are eligible for eviction. However, this low-associativity version of LRU has never been analyzed.
+<br><br>
+We show that low-associativity implementations of LRU are often actually not constant-competitive algorithms. On the other hand, we give randomized eviction algorithms that are constant-competitive, and even a 𝑑-associative algorithm that, using any 𝑑= 𝜔(1), and using 1 + 𝑜(1)resource augmentation, is 1 + 𝑜(1)competitive with the fully-associative LRU algorithm. Combined, our algorithms suggest a new way of thinking about the design of low-associativity caches, in hich one intentionally designs randomized mechanisms that allow parts of the cache which are “overheating” to naturally cool down.
+</details>
+
+## The Case for External Graph Sketching
+[Download Paper](/assets/papers/2025_external_sketch.pdf)
+
+Michael A. Bender, Martin Farach-Colton, Riko Jacob, Hanna Komlos, David Tench, **Evan T. West**. 2025. The Case for External Graph Sketching. In *Proceedings of the Conference on Applied and Computational Discrete Algorithms (ACDA'25)* (pp. 115-129). Society for Industrial and Applied Mathematics.
+
+<details>
+<summary>Abstract</summary>
+Algorithms in the data stream model use O(polylog(N)) space to compute some property of an input of size N, and many of these algorithms are implemented and used in practice. However, sketching algorithms in the graph semi-streaming model use O(Vpolylog(V)) space for a V-vertex graph, and the fact that implementations of these algorithms are not used in the academic literature or in industrial applications may be because this space requirement is too large
+for RAM on today’s hardware.
+<br><br>
+In this paper we introduce the external semi-streaming model, which addresses the aspects of the semi-streaming model that limit its practical impact. In this model, the input is in the form of a stream and O(Vpolylog(V)) space is available, but most of that space is accessible only via block I/O operations as in the external memory model. The goal in the external semi-streaming model is to simultaneously achieve small space and low I/O cost.
+<br><br>
+We present a general transformation from any vertex-based sketch algorithm to one which has a low sketching cost in the new model. We prove that this automatic transformation is tight or nearly (up to a O(log(V)) factor) tight via an I/O lower bound for the task of sketching the input stream.
+<br><br>
+Using this transformation and other techniques, we present external semi-streaming algorithms for connectivity, bipartiteness testing, (1 + ϵ)-approximating MST weight, testing k-edge connectivity, (1 + ϵ)-approximating the minimum cut of a graph, computing ϵ-cut sparsifiers, and approximating the density of the densest subgraph. These algorithms all use O(Vpoly(log(V),ϵ−1,k) space. For many of these problems, our external semi-streaming algorithms outperform the state of the art algorithms in both the sketching and external-memory models.
+</details>
+
 ## Exploring the Landscape of Distributed Graph Sketching
 [Download Paper](/assets/papers/2025_Landscape.pdf)
 
-David Tench, **Evan T West**, Kenny Zhang, Michael A. Bender, Daniel DeLayo, Martín Farach-Colton, Gilvir Gill, Tyler Seip, Victor Zhang. 2025. Exploring the Landscape of Distributed Graph Sketching. In *Proceedings of the Symposium on Algorithm Engineering and Experiments (ALENEX'25)*, (pp. 133-146). January 12-13, 2025, New Orleans, LA, USA. SIAM [https://doi.org/10.1137/1.9781611978339.11](https://doi.org/10.1137/1.9781611978339.11)
+David Tench, **Evan T. West**, Kenny Zhang, Michael A. Bender, Daniel DeLayo, Martín Farach-Colton, Gilvir Gill, Tyler Seip, Victor Zhang. 2025. Exploring the Landscape of Distributed Graph Sketching. In *Proceedings of the Symposium on Algorithm Engineering and Experiments (ALENEX'25)*, (pp. 133-146). January 12-13, 2025, New Orleans, LA, USA. SIAM [https://doi.org/10.1137/1.9781611978339.11](https://doi.org/10.1137/1.9781611978339.11)
 
 <details>
 <summary>Abstract</summary>
