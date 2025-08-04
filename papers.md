@@ -12,13 +12,13 @@ Michael A. Bender, Alex Conway, Daniel DeLayo, Martin Farach-Colton, Jaehyun Han
 
 <details>
 <summary>Abstract</summary>
-Perhaps the most influential result in the theory of caches is the following theorem due to Sleator and Tarjan: With 𝑂(1)resource augmentation, the basic LRU eviction policy is guaranteed to be 𝑂(1)-competitive with the optimal offline policy. 
+Perhaps the most influential result in the theory of caches is the following theorem due to Sleator and Tarjan: With 𝑂(1) resource augmentation, the basic LRU eviction policy is guaranteed to be 𝑂(1)-competitive with the optimal offline policy. 
 <br><br>
-Sleator and Tarjan’s result applies to LRU on a fully associative cache, but does not tell us how to think about caches with low associativity, i.e., caches where each page has only 𝑑positions in which it is capable of residing. This means that many modern caches cannot directly apply the result.
+Sleator and Tarjan’s result applies to LRU on a fully associative cache, but does not tell us how to think about caches with low associativity, i.e., caches where each page has only 𝑑 positions in which it is capable of residing. This means that many modern caches cannot directly apply the result.
 <br><br>
 It is widely believed that to implement a cache with low associativity, one should still use LRU, but restricted to the 𝑑positions that are eligible for eviction. However, this low-associativity version of LRU has never been analyzed.
 <br><br>
-We show that low-associativity implementations of LRU are often actually not constant-competitive algorithms. On the other hand, we give randomized eviction algorithms that are constant-competitive, and even a 𝑑-associative algorithm that, using any 𝑑= 𝜔(1), and using 1 + 𝑜(1)resource augmentation, is 1 + 𝑜(1)competitive with the fully-associative LRU algorithm. Combined, our algorithms suggest a new way of thinking about the design of low-associativity caches, in hich one intentionally designs randomized mechanisms that allow parts of the cache which are “overheating” to naturally cool down.
+We show that low-associativity implementations of LRU are often actually not constant-competitive algorithms. On the other hand, we give randomized eviction algorithms that are constant-competitive, and even a 𝑑-associative algorithm that, using any 𝑑 = 𝜔(1), and using 1 + 𝑜(1) resource augmentation, is 1 + 𝑜(1)competitive with the fully-associative LRU algorithm. Combined, our algorithms suggest a new way of thinking about the design of low-associativity caches, in hich one intentionally designs randomized mechanisms that allow parts of the cache which are “overheating” to naturally cool down.
 </details>
 
 ## The Case for External Graph Sketching
